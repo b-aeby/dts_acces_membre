@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: DTS: accès membre
+ * Plugin URI: https://github.com/b-aeby/dts_acces_membre
  * Description: Restriction d'accès au formulaire de réservation aux évènements selon les tags d'évènement (slugs = membre-actif, membre-passif, non-membre) et le statut de membre, par le shortcode [acces_membre] déclaré dans les réglages avancés d'Event Manager (Format page évènement seul)
  * Version: 1.1
  */
