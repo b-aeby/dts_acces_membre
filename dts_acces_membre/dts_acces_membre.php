@@ -23,10 +23,10 @@ function get_custom_ur_subscriptions($atts, $content = null) {
     FROM {$wpdb->prefix}term_relationships rel
     INNER JOIN {$wpdb->prefix}term_taxonomy tax ON tax.term_taxonomy_id = rel.term_taxonomy_id
     INNER JOIN {$wpdb->prefix}terms t ON t.term_id = tax.term_id
-    WHERE rel.object_id = %d 
+    WHERE rel.object_id = %d AND tax.taxonomy = %s AND t.slug IN ('membre-actif', 'membre-passif', 'non-membre')
 SQL;
 
-    $tags = $wpdb->get_results($wpdb->prepare($sql, $event_id));
+    $tags = $wpdb->get_results($wpdb->prepare($sql, $event_id, 'event-tags'));
 
     // --- PARTIE 2 : ABONNEMENTS USER REGISTRATION ---
     $user_id = get_current_user_id();
