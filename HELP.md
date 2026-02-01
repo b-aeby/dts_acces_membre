@@ -301,7 +301,7 @@ Fonction principale du shortcode. Gère :
 
 Pour toute question ou problème, consultez :
 
-- 📧 Contact : support@diabetetypesport.ch
+- 📧 Contact : asa@diabetetypesport.ch
 - 🌐 Site : https://diabetetypesport.ch
 - 📋 [Voir le README.md](README.md)
 
